@@ -1,0 +1,3334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Well Arabia is the first holistic Arab-Islamic heritage diet platform — bridging ancestral wisdom with modern nutritional science for the MENA region and beyond.">
+    <meta name="keywords" content="Arab heritage diet, Islamic nutrition, MENA wellness, heritage foods, ancestral nutrition, cultural health">
+    <meta name="author" content="Well Arabia">
+    <meta property="og:title" content="Well Arabia — Heritage Wellness, Rooted in Science">
+    <meta property="og:description" content="The first holistic Arab-Islamic heritage diet platform — bridging ancestral wisdom with modern nutritional science.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="logo.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Well Arabia — Heritage Wellness, Rooted in Science">
+    <meta name="twitter:description" content="The first holistic Arab-Islamic heritage diet platform — bridging ancestral wisdom with modern nutritional science.">
+    <link rel="icon" type="image/jpeg" href="logo.jpeg">
+    <title>Well Arabia — Heritage Wellness, Rooted in Science</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Raleway:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* ═══════════════════════════════════════════
+           RESET & ROOT
+        ═══════════════════════════════════════════ */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --gold-deep:    #3A2A08;
+            --gold-dark:    #5C4A0E;
+            --gold:         #8B6914;
+            --gold-mid:     #A6811E;
+            --gold-light:   #C4A55A;
+            --gold-pale:    #E8D9A8;
+            --gold-whisper: #F5EED4;
+
+            --bg-cream:     #FAF7F0;
+            --bg-warm:      #F3EDE0;
+            --bg-dark:      #1A1408;
+            --bg-section:   #F7F3EA;
+
+            --text-dark:    #1C1709;
+            --text-body:    #3D3526;
+            --text-mid:     #6B5E47;
+            --text-light:   #9A8E78;
+            --text-on-dark: #F0EAD6;
+
+            --white:        #FFFFFF;
+            --border:       #E4DCC8;
+
+            --font-display: 'Cormorant Garamond', Georgia, serif;
+            --font-body:    'Raleway', 'Helvetica Neue', sans-serif;
+
+            --ease-out: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: var(--font-body);
+            font-weight: 300;
+            color: var(--text-body);
+            background: var(--bg-cream);
+            line-height: 1.7;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        ::selection {
+            background: var(--gold-pale);
+            color: var(--gold-deep);
+        }
+
+        img { max-width: 100%; display: block; }
+        a { color: inherit; text-decoration: none; }
+
+        /* ═══════════════════════════════════════════
+           TYPOGRAPHY
+        ═══════════════════════════════════════════ */
+        h1, h2, h3, h4, h5 {
+            font-family: var(--font-display);
+            font-weight: 400;
+            color: var(--text-dark);
+            line-height: 1.15;
+        }
+
+        .section-label {
+            font-family: var(--font-body);
+            font-weight: 500;
+            font-size: 0.7rem;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--gold);
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .section-label::before {
+            content: '';
+            width: 40px;
+            height: 1px;
+            background: var(--gold-light);
+        }
+
+        .section-title {
+            font-size: clamp(2.2rem, 5vw, 3.8rem);
+            margin-bottom: 24px;
+            letter-spacing: -0.01em;
+        }
+
+        .section-subtitle {
+            font-family: var(--font-display);
+            font-size: clamp(1.1rem, 2vw, 1.35rem);
+            font-weight: 300;
+            font-style: italic;
+            color: var(--text-mid);
+            max-width: 600px;
+            line-height: 1.6;
+        }
+
+        /* ═══════════════════════════════════════════
+           LAYOUT UTILITIES
+        ═══════════════════════════════════════════ */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .container--narrow {
+            max-width: 800px;
+        }
+
+        .container--wide {
+            max-width: 1400px;
+        }
+
+        section {
+            padding: 120px 0;
+            position: relative;
+        }
+
+        /* ═══════════════════════════════════════════
+           GOLDEN DIVIDER
+        ═══════════════════════════════════════════ */
+        .divider {
+            width: 60px;
+            height: 1px;
+            background: linear-gradient(90deg, var(--gold-light), var(--gold), var(--gold-light));
+            margin: 30px 0;
+        }
+
+        .divider--center { margin: 30px auto; }
+
+        /* ═══════════════════════════════════════════
+           GEOMETRIC PATTERN (Arabic-inspired)
+        ═══════════════════════════════════════════ */
+        .pattern-bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0.03;
+            pointer-events: none;
+            background-image:
+                repeating-linear-gradient(0deg, transparent, transparent 60px, var(--gold) 60px, var(--gold) 61px),
+                repeating-linear-gradient(90deg, transparent, transparent 60px, var(--gold) 60px, var(--gold) 61px);
+        }
+
+        /* ═══════════════════════════════════════════
+           NAVIGATION
+        ═══════════════════════════════════════════ */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 20px 0;
+            transition: all 0.5s var(--ease-out);
+        }
+
+        .nav.scrolled {
+            background: rgba(250, 247, 240, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            padding: 12px 0;
+            box-shadow: 0 1px 40px rgba(58, 42, 8, 0.06);
+        }
+
+        .nav__inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .nav__logo {
+            height: 50px;
+            transition: height 0.5s var(--ease-out);
+        }
+
+        .nav.scrolled .nav__logo {
+            height: 38px;
+        }
+
+        .nav__links {
+            display: flex;
+            align-items: center;
+            gap: 36px;
+            list-style: none;
+        }
+
+        .nav__link {
+            font-family: var(--font-body);
+            font-size: 0.72rem;
+            font-weight: 500;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--text-mid);
+            position: relative;
+            transition: color 0.3s;
+            cursor: pointer;
+        }
+
+        .nav__link:hover,
+        .nav__link.active {
+            color: var(--gold);
+        }
+
+        .nav__link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--gold);
+            transition: width 0.4s var(--ease-out);
+        }
+
+        .nav__link:hover::after,
+        .nav__link.active::after {
+            width: 100%;
+        }
+
+        .nav__cta {
+            font-family: var(--font-body);
+            font-size: 0.68rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--gold-deep);
+            border: 1px solid var(--gold);
+            padding: 10px 28px;
+            transition: all 0.4s var(--ease-out);
+            cursor: pointer;
+            background: transparent;
+        }
+
+        .nav__cta:hover {
+            background: var(--gold);
+            color: var(--white);
+        }
+
+        /* Mobile hamburger */
+        .nav__hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        .nav__hamburger span {
+            width: 24px;
+            height: 1.5px;
+            background: var(--text-dark);
+            transition: all 0.3s;
+        }
+
+        /* ═══════════════════════════════════════════
+           HERO
+        ═══════════════════════════════════════════ */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            background: var(--bg-dark);
+            padding: 0;
+        }
+
+        .hero__bg {
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse at 30% 50%, rgba(139, 105, 20, 0.15) 0%, transparent 60%),
+                radial-gradient(ellipse at 70% 30%, rgba(196, 165, 90, 0.08) 0%, transparent 50%),
+                linear-gradient(180deg, var(--bg-dark) 0%, #241C0A 50%, var(--bg-dark) 100%);
+        }
+
+        .hero__pattern {
+            position: absolute;
+            inset: 0;
+            opacity: 0.04;
+            background-image:
+                repeating-conic-gradient(from 0deg at 50% 50%, transparent 0deg, transparent 80deg, var(--gold-light) 80deg, var(--gold-light) 81deg);
+            background-size: 120px 120px;
+        }
+
+        .hero__content {
+            position: relative;
+            text-align: center;
+            max-width: 900px;
+            padding: 40px;
+            z-index: 2;
+        }
+
+        .hero__logo-mark {
+            width: 120px;
+            margin: 0 auto 50px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeUp 1s 0.3s var(--ease-out) forwards;
+        }
+
+        .hero__title {
+            font-family: var(--font-display);
+            font-size: clamp(2.8rem, 7vw, 5.5rem);
+            font-weight: 300;
+            color: var(--gold-pale);
+            letter-spacing: 0.02em;
+            line-height: 1.1;
+            margin-bottom: 10px;
+            opacity: 0;
+            transform: translateY(40px);
+            animation: fadeUp 1s 0.5s var(--ease-out) forwards;
+        }
+
+        .hero__title em {
+            font-style: italic;
+            color: var(--gold-light);
+        }
+
+        .hero__line {
+            width: 80px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+            margin: 32px auto;
+            opacity: 0;
+            animation: fadeIn 1s 0.9s var(--ease-out) forwards;
+        }
+
+        .hero__subtitle {
+            font-family: var(--font-display);
+            font-size: clamp(1.1rem, 2.2vw, 1.45rem);
+            font-weight: 300;
+            font-style: italic;
+            color: var(--gold-light);
+            opacity: 0.8;
+            max-width: 650px;
+            margin: 0 auto 48px;
+            line-height: 1.6;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeUp 1s 0.8s var(--ease-out) forwards;
+        }
+
+        .hero__actions {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 1s 1.1s var(--ease-out) forwards;
+        }
+
+        .btn {
+            font-family: var(--font-body);
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            padding: 16px 40px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.4s var(--ease-out);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn--primary {
+            background: var(--gold);
+            color: var(--white);
+        }
+
+        .btn--primary:hover {
+            background: var(--gold-mid);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(139, 105, 20, 0.3);
+        }
+
+        .btn--outline {
+            background: transparent;
+            color: var(--gold-pale);
+            border: 1px solid rgba(196, 165, 90, 0.4);
+        }
+
+        .btn--outline:hover {
+            border-color: var(--gold);
+            color: var(--gold-light);
+            transform: translateY(-2px);
+        }
+
+        .btn--dark {
+            background: transparent;
+            color: var(--gold);
+            border: 1px solid var(--gold);
+        }
+
+        .btn--dark:hover {
+            background: var(--gold);
+            color: var(--white);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(139, 105, 20, 0.2);
+        }
+
+        .hero__scroll {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            opacity: 0;
+            animation: fadeIn 1s 1.5s var(--ease-out) forwards;
+        }
+
+        .hero__scroll span {
+            font-family: var(--font-body);
+            font-size: 0.6rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--gold-light);
+            opacity: 0.5;
+        }
+
+        .hero__scroll-line {
+            width: 1px;
+            height: 40px;
+            background: linear-gradient(180deg, var(--gold-light), transparent);
+            animation: scrollPulse 2s infinite;
+        }
+
+        @keyframes scrollPulse {
+            0%, 100% { opacity: 0.3; transform: scaleY(0.5); transform-origin: top; }
+            50% { opacity: 0.8; transform: scaleY(1); }
+        }
+
+        /* ═══════════════════════════════════════════
+           INTRODUCTION STRIP
+        ═══════════════════════════════════════════ */
+        .intro-strip {
+            padding: 80px 0;
+            background: var(--white);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .intro-strip__inner {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 60px;
+            text-align: center;
+        }
+
+        .intro-strip__item {
+            padding: 0 20px;
+        }
+
+        .intro-strip__number {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            font-weight: 300;
+            color: var(--gold);
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+
+        .intro-strip__text {
+            font-size: 0.8rem;
+            letter-spacing: 0.05em;
+            color: var(--text-mid);
+        }
+
+        /* ═══════════════════════════════════════════
+           ABOUT SECTION
+        ═══════════════════════════════════════════ */
+        .about {
+            background: var(--bg-cream);
+        }
+
+        .about__grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .about__visual {
+            position: relative;
+            height: 550px;
+        }
+
+        .about__image-frame {
+            position: absolute;
+            width: 75%;
+            height: 85%;
+            top: 0;
+            right: 0;
+            background:
+                linear-gradient(135deg, var(--gold-pale) 0%, var(--bg-warm) 50%, var(--gold-whisper) 100%);
+            overflow: hidden;
+        }
+
+        .about__image-frame::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(139,105,20,0.03) 20px, rgba(139,105,20,0.03) 21px);
+        }
+
+        .about__image-accent {
+            position: absolute;
+            width: 55%;
+            height: 60%;
+            bottom: 0;
+            left: 0;
+            border: 1px solid var(--gold-light);
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--white);
+        }
+
+        .about__image-accent .arabesque {
+            font-family: var(--font-display);
+            font-size: 6rem;
+            color: var(--gold-pale);
+            opacity: 0.4;
+            font-style: italic;
+        }
+
+        .about__text p {
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+            line-height: 1.85;
+        }
+
+        .about__values {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-top: 36px;
+        }
+
+        .about__value {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .about__value-icon {
+            width: 32px;
+            height: 32px;
+            border: 1px solid var(--gold-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .about__value-icon i {
+            font-size: 0.7rem;
+            color: var(--gold);
+        }
+
+        .about__value-text {
+            font-size: 0.82rem;
+            font-weight: 400;
+            color: var(--text-body);
+        }
+
+        /* ═══════════════════════════════════════════
+           MISSION / VISION BAND
+        ═══════════════════════════════════════════ */
+        .mission-band {
+            background: var(--bg-dark);
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .mission-band__pattern {
+            position: absolute;
+            inset: 0;
+            opacity: 0.03;
+            background:
+                radial-gradient(circle at 20% 50%, var(--gold) 1px, transparent 1px),
+                radial-gradient(circle at 80% 50%, var(--gold) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        .mission-band__grid {
+            display: grid;
+            grid-template-columns: 1fr 1px 1fr;
+            gap: 60px;
+            position: relative;
+        }
+
+        .mission-band__divider {
+            background: linear-gradient(180deg, transparent, var(--gold-dark), transparent);
+        }
+
+        .mission-band__item {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .mission-band__label {
+            font-family: var(--font-body);
+            font-size: 0.65rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 24px;
+        }
+
+        .mission-band__text {
+            font-family: var(--font-display);
+            font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+            font-weight: 300;
+            font-style: italic;
+            color: var(--gold-pale);
+            line-height: 1.55;
+            max-width: 450px;
+            margin: 0 auto;
+        }
+
+        /* ═══════════════════════════════════════════
+           THE WELL ARABIA DIET
+        ═══════════════════════════════════════════ */
+        .diet {
+            background: var(--white);
+        }
+
+        .diet__header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .diet__header .section-subtitle {
+            margin: 0 auto;
+        }
+
+        .diet__pillars {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+            margin-bottom: 80px;
+        }
+
+        .pillar {
+            padding: 48px 32px;
+            text-align: center;
+            border: 1px solid transparent;
+            transition: all 0.5s var(--ease-out);
+            position: relative;
+            background: var(--bg-cream);
+        }
+
+        .pillar:hover {
+            border-color: var(--gold-light);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 60px rgba(58, 42, 8, 0.08);
+        }
+
+        .pillar__icon {
+            width: 56px;
+            height: 56px;
+            margin: 0 auto 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--gold-light);
+            color: var(--gold);
+            font-size: 1.2rem;
+            transition: all 0.4s;
+        }
+
+        .pillar:hover .pillar__icon {
+            background: var(--gold);
+            color: var(--white);
+            border-color: var(--gold);
+        }
+
+        .pillar__title {
+            font-family: var(--font-display);
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin-bottom: 12px;
+            color: var(--text-dark);
+        }
+
+        .pillar__desc {
+            font-size: 0.82rem;
+            color: var(--text-mid);
+            line-height: 1.7;
+        }
+
+        /* What makes it different */
+        .diet__difference {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+            padding-top: 60px;
+            border-top: 1px solid var(--border);
+        }
+
+        .diet__difference-list {
+            list-style: none;
+        }
+
+        .diet__difference-list li {
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            font-size: 0.92rem;
+        }
+
+        .diet__difference-list li:last-child {
+            border-bottom: none;
+        }
+
+        .diet__difference-list .num {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            color: var(--gold-light);
+            font-weight: 300;
+            line-height: 1;
+            flex-shrink: 0;
+            width: 30px;
+        }
+
+        .diet__quote {
+            padding: 48px;
+            background: var(--bg-dark);
+            position: relative;
+        }
+
+        .diet__quote::before {
+            content: '\201C';
+            font-family: var(--font-display);
+            font-size: 8rem;
+            color: var(--gold-dark);
+            position: absolute;
+            top: 10px;
+            left: 30px;
+            line-height: 1;
+            opacity: 0.4;
+        }
+
+        .diet__quote p {
+            font-family: var(--font-display);
+            font-size: 1.4rem;
+            font-style: italic;
+            font-weight: 300;
+            color: var(--gold-pale);
+            line-height: 1.6;
+            position: relative;
+            z-index: 1;
+        }
+
+        .diet__quote cite {
+            display: block;
+            margin-top: 20px;
+            font-style: normal;
+            font-family: var(--font-body);
+            font-size: 0.72rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--gold);
+        }
+
+        /* ═══════════════════════════════════════════
+           AUDIENCE SPLIT (For Professionals / Individuals)
+        ═══════════════════════════════════════════ */
+        .audience {
+            background: var(--bg-section);
+            position: relative;
+        }
+
+        .audience__header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .audience__grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+        }
+
+        .audience__card {
+            padding: 64px 56px;
+            position: relative;
+            transition: all 0.5s var(--ease-out);
+        }
+
+        .audience__card--pro {
+            background: var(--white);
+            border: 1px solid var(--border);
+        }
+
+        .audience__card--ind {
+            background: var(--bg-dark);
+            color: var(--text-on-dark);
+        }
+
+        .audience__card-label {
+            font-family: var(--font-body);
+            font-size: 0.65rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+
+        .audience__card-title {
+            font-family: var(--font-display);
+            font-size: clamp(1.8rem, 3vw, 2.4rem);
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        .audience__card--ind .audience__card-title {
+            color: var(--gold-pale);
+        }
+
+        .audience__card-desc {
+            font-size: 0.9rem;
+            line-height: 1.8;
+            margin-bottom: 32px;
+            opacity: 0.85;
+        }
+
+        .audience__card--ind .audience__card-desc {
+            color: rgba(240, 234, 214, 0.7);
+        }
+
+        .audience__benefits {
+            list-style: none;
+            margin-bottom: 40px;
+        }
+
+        .audience__benefits li {
+            padding: 12px 0;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-bottom: 1px solid rgba(228, 220, 200, 0.2);
+        }
+
+        .audience__card--ind .audience__benefits li {
+            border-bottom-color: rgba(139, 105, 20, 0.15);
+        }
+
+        .audience__benefits li i {
+            color: var(--gold);
+            font-size: 0.6rem;
+            flex-shrink: 0;
+        }
+
+        /* ═══════════════════════════════════════════
+           ECOSYSTEM
+        ═══════════════════════════════════════════ */
+        .ecosystem {
+            background: var(--white);
+            overflow: hidden;
+        }
+
+        .ecosystem__header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .ecosystem__ring {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 2px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .eco-node {
+            padding: 40px 24px;
+            text-align: center;
+            background: var(--bg-cream);
+            position: relative;
+            transition: all 0.5s var(--ease-out);
+        }
+
+        .eco-node:hover {
+            background: var(--bg-dark);
+            color: var(--gold-pale);
+        }
+
+        .eco-node:hover .eco-node__title,
+        .eco-node:hover .eco-node__desc {
+            color: var(--gold-pale);
+        }
+
+        .eco-node:hover .eco-node__icon {
+            background: var(--gold);
+            color: var(--white);
+            border-color: var(--gold);
+        }
+
+        .eco-node__icon {
+            width: 50px;
+            height: 50px;
+            border: 1px solid var(--gold-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 1rem;
+            color: var(--gold);
+            transition: all 0.4s;
+        }
+
+        .eco-node__title {
+            font-family: var(--font-display);
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+            transition: color 0.4s;
+        }
+
+        .eco-node__desc {
+            font-size: 0.75rem;
+            color: var(--text-mid);
+            line-height: 1.6;
+            transition: color 0.4s;
+        }
+
+        .eco-node__stage {
+            display: inline-block;
+            margin-top: 16px;
+            font-size: 0.6rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--gold);
+            border: 1px solid var(--gold-light);
+            padding: 4px 12px;
+        }
+
+        /* ═══════════════════════════════════════════
+           SCIENCE & HERITAGE
+        ═══════════════════════════════════════════ */
+        .science {
+            background: var(--bg-section);
+            position: relative;
+        }
+
+        .science__grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        .science__card {
+            padding: 48px 36px;
+            background: var(--white);
+            border: 1px solid var(--border);
+            transition: all 0.5s var(--ease-out);
+        }
+
+        .science__card:hover {
+            border-color: var(--gold-light);
+            box-shadow: 0 16px 48px rgba(58, 42, 8, 0.06);
+        }
+
+        .science__card-icon {
+            font-size: 1.5rem;
+            color: var(--gold);
+            margin-bottom: 24px;
+        }
+
+        .science__card-title {
+            font-family: var(--font-display);
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin-bottom: 16px;
+            color: var(--text-dark);
+        }
+
+        .science__card-text {
+            font-size: 0.85rem;
+            line-height: 1.75;
+            color: var(--text-mid);
+        }
+
+        /* ═══════════════════════════════════════════
+           RESOURCES
+        ═══════════════════════════════════════════ */
+        .resources {
+            background: var(--white);
+        }
+
+        .resources__grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+
+        .resource-card {
+            border: 1px solid var(--border);
+            padding: 40px 32px;
+            transition: all 0.5s var(--ease-out);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .resource-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--gold), var(--gold-light));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.5s var(--ease-out);
+        }
+
+        .resource-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .resource-card:hover {
+            border-color: var(--gold-light);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 36px rgba(58, 42, 8, 0.06);
+        }
+
+        .resource-card__badge {
+            display: inline-block;
+            font-size: 0.6rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--gold);
+            border: 1px solid var(--gold-light);
+            padding: 4px 12px;
+            margin-bottom: 20px;
+        }
+
+        .resource-card__title {
+            font-family: var(--font-display);
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: var(--text-dark);
+            margin-bottom: 12px;
+        }
+
+        .resource-card__text {
+            font-size: 0.82rem;
+            color: var(--text-mid);
+            line-height: 1.7;
+        }
+
+        /* ═══════════════════════════════════════════
+           PARTNER CTA
+        ═══════════════════════════════════════════ */
+        .partner-cta {
+            background: var(--bg-dark);
+            padding: 120px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .partner-cta__bg {
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse at 50% 50%, rgba(139, 105, 20, 0.1) 0%, transparent 70%);
+        }
+
+        .partner-cta__content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .partner-cta .section-label {
+            color: var(--gold);
+        }
+
+        .partner-cta .section-label::before {
+            background: var(--gold-dark);
+        }
+
+        .partner-cta .section-title {
+            color: var(--gold-pale);
+            margin-bottom: 20px;
+        }
+
+        .partner-cta .section-subtitle {
+            color: rgba(232, 217, 168, 0.6);
+            margin: 0 auto 48px;
+        }
+
+        .partner-cta__types {
+            display: flex;
+            justify-content: center;
+            gap: 48px;
+            margin-bottom: 48px;
+            flex-wrap: wrap;
+        }
+
+        .partner-type {
+            text-align: center;
+            opacity: 0.7;
+            transition: opacity 0.3s;
+            cursor: default;
+        }
+
+        .partner-type:hover {
+            opacity: 1;
+        }
+
+        .partner-type__icon {
+            width: 48px;
+            height: 48px;
+            border: 1px solid var(--gold-dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 12px;
+            color: var(--gold);
+            font-size: 1rem;
+        }
+
+        .partner-type__label {
+            font-size: 0.7rem;
+            letter-spacing: 0.1em;
+            color: var(--gold-light);
+        }
+
+        /* ═══════════════════════════════════════════
+           CONTACT / FOOTER
+        ═══════════════════════════════════════════ */
+        .contact {
+            background: var(--bg-cream);
+            padding: 100px 0;
+        }
+
+        .contact__grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+        }
+
+        .contact__info h3 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+
+        .contact__info p {
+            font-size: 0.92rem;
+            color: var(--text-mid);
+            line-height: 1.8;
+            margin-bottom: 32px;
+        }
+
+        .contact__detail {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 16px 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.88rem;
+        }
+
+        .contact__detail i {
+            color: var(--gold);
+            width: 20px;
+            text-align: center;
+        }
+
+        .contact__form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .form-group {
+            position: relative;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 16px 20px;
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            font-weight: 300;
+            border: 1px solid var(--border);
+            background: var(--white);
+            color: var(--text-body);
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: var(--gold);
+        }
+
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .form-group label {
+            position: absolute;
+            top: -8px;
+            left: 16px;
+            font-size: 0.65rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--text-light);
+            background: var(--white);
+            padding: 0 6px;
+        }
+
+        /* ═══════════════════════════════════════════
+           NEWSLETTER STRIP
+        ═══════════════════════════════════════════ */
+        .newsletter {
+            padding: 60px 0;
+            background: var(--bg-warm);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .newsletter__inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .newsletter__text {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: var(--text-dark);
+        }
+
+        .newsletter__text span {
+            font-style: italic;
+            color: var(--gold);
+        }
+
+        .newsletter__form {
+            display: flex;
+            gap: 0;
+        }
+
+        .newsletter__input {
+            padding: 14px 24px;
+            font-family: var(--font-body);
+            font-size: 0.82rem;
+            border: 1px solid var(--border);
+            border-right: none;
+            background: var(--white);
+            color: var(--text-body);
+            width: 300px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .newsletter__input:focus {
+            border-color: var(--gold);
+        }
+
+        .newsletter__submit {
+            padding: 14px 32px;
+            font-family: var(--font-body);
+            font-size: 0.68rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            background: var(--gold);
+            color: var(--white);
+            border: 1px solid var(--gold);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .newsletter__submit:hover {
+            background: var(--gold-dark);
+            border-color: var(--gold-dark);
+        }
+
+        /* ═══════════════════════════════════════════
+           FOOTER
+        ═══════════════════════════════════════════ */
+        .footer {
+            background: var(--bg-dark);
+            padding: 80px 0 40px;
+        }
+
+        .footer__top {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 60px;
+            padding-bottom: 60px;
+            border-bottom: 1px solid rgba(139, 105, 20, 0.15);
+        }
+
+        .footer__brand-desc {
+            font-size: 0.82rem;
+            color: rgba(240, 234, 214, 0.5);
+            line-height: 1.7;
+            margin-top: 20px;
+            max-width: 320px;
+        }
+
+        .footer__logo {
+            height: 40px;
+            filter: brightness(1.2);
+        }
+
+        .footer__heading {
+            font-family: var(--font-body);
+            font-size: 0.65rem;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 24px;
+        }
+
+        .footer__links {
+            list-style: none;
+        }
+
+        .footer__links li {
+            margin-bottom: 12px;
+        }
+
+        .footer__links a {
+            font-size: 0.82rem;
+            color: rgba(240, 234, 214, 0.5);
+            transition: color 0.3s;
+        }
+
+        .footer__links a:hover {
+            color: var(--gold-pale);
+        }
+
+        .footer__bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 40px;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer__copy {
+            font-size: 0.72rem;
+            color: rgba(240, 234, 214, 0.3);
+        }
+
+        .footer__social {
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer__social a {
+            width: 36px;
+            height: 36px;
+            border: 1px solid rgba(139, 105, 20, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold-light);
+            font-size: 0.8rem;
+            transition: all 0.3s;
+        }
+
+        .footer__social a:hover {
+            background: var(--gold);
+            border-color: var(--gold);
+            color: var(--white);
+        }
+
+        /* ═══════════════════════════════════════════
+           ANIMATIONS
+        ═══════════════════════════════════════════ */
+        @keyframes fadeUp {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s var(--ease-out);
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-delay-1 { transition-delay: 0.1s; }
+        .reveal-delay-2 { transition-delay: 0.2s; }
+        .reveal-delay-3 { transition-delay: 0.3s; }
+        .reveal-delay-4 { transition-delay: 0.4s; }
+
+        /* ═══════════════════════════════════════════
+           MOBILE MENU
+        ═══════════════════════════════════════════ */
+        .mobile-menu {
+            position: fixed;
+            inset: 0;
+            background: rgba(26, 20, 8, 0.97);
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 32px;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.4s;
+        }
+
+        .mobile-menu.open {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .mobile-menu a {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            color: var(--gold-pale);
+            transition: color 0.3s;
+        }
+
+        .mobile-menu a:hover {
+            color: var(--gold);
+        }
+
+        .mobile-menu__close {
+            position: absolute;
+            top: 28px;
+            right: 40px;
+            font-size: 1.5rem;
+            color: var(--gold-light);
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+
+        /* ═══════════════════════════════════════════
+           RESPONSIVE
+        ═══════════════════════════════════════════ */
+        @media (max-width: 1024px) {
+            .diet__pillars { grid-template-columns: repeat(2, 1fr); }
+            .ecosystem__ring { grid-template-columns: repeat(3, 1fr); }
+            .footer__top { grid-template-columns: 1fr 1fr; gap: 40px; }
+        }
+
+        @media (max-width: 768px) {
+            section { padding: 80px 0; }
+            .container { padding: 0 24px; }
+
+            .nav__links { display: none; }
+            .nav__cta { display: none; }
+            .nav__hamburger { display: flex; }
+
+            .about__grid { grid-template-columns: 1fr; gap: 40px; }
+            .about__visual { height: 350px; }
+            .about__values { grid-template-columns: 1fr; }
+
+            .mission-band__grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .mission-band__divider { display: none; }
+
+            .diet__pillars { grid-template-columns: 1fr; }
+            .diet__difference { grid-template-columns: 1fr; gap: 40px; }
+
+            .audience__grid { grid-template-columns: 1fr; }
+
+            .ecosystem__ring { grid-template-columns: 1fr 1fr; }
+
+            .science__grid { grid-template-columns: 1fr; }
+            .resources__grid { grid-template-columns: 1fr; }
+
+            .contact__grid { grid-template-columns: 1fr; gap: 40px; }
+
+            .newsletter__inner { flex-direction: column; text-align: center; }
+            .newsletter__input { width: 100%; }
+
+            .footer__top { grid-template-columns: 1fr; gap: 32px; }
+
+            .partner-cta__types { gap: 24px; }
+
+            .intro-strip__inner { grid-template-columns: 1fr; gap: 32px; }
+
+            .back-to-top { bottom: 20px; right: 20px; width: 40px; height: 40px; font-size: 0.7rem; }
+            .scroll-progress { height: 2px; }
+        }
+
+        /* ═══════════════════════════════════════════
+           NAV — HERO DARK MODE (before scroll)
+        ═══════════════════════════════════════════ */
+        .nav:not(.scrolled) .nav__link {
+            color: rgba(232, 217, 168, 0.7);
+        }
+        .nav:not(.scrolled) .nav__link:hover,
+        .nav:not(.scrolled) .nav__link.active {
+            color: var(--gold-light);
+        }
+        .nav:not(.scrolled) .nav__link::after {
+            background: var(--gold-light);
+        }
+        .nav:not(.scrolled) .nav__cta {
+            color: var(--gold-pale);
+            border-color: rgba(196, 165, 90, 0.35);
+        }
+        .nav:not(.scrolled) .nav__cta:hover {
+            background: var(--gold);
+            color: var(--white);
+            border-color: var(--gold);
+        }
+        .nav:not(.scrolled) .nav__hamburger span {
+            background: var(--gold-pale);
+        }
+
+        /* ═══════════════════════════════════════════
+           PAGE LOADER
+        ═══════════════════════════════════════════ */
+        .page-loader {
+            position: fixed;
+            inset: 0;
+            background: var(--bg-dark);
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.6s ease, visibility 0.6s ease;
+        }
+        .page-loader.loaded {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+        .page-loader__logo {
+            width: 80px;
+            opacity: 0;
+            animation: loaderFadeIn 0.8s 0.2s ease forwards;
+        }
+        .page-loader__bar {
+            width: 120px;
+            height: 1px;
+            background: rgba(139, 105, 20, 0.2);
+            margin-top: 32px;
+            border-radius: 2px;
+            overflow: hidden;
+            opacity: 0;
+            animation: loaderFadeIn 0.5s 0.4s ease forwards;
+        }
+        .page-loader__bar-fill {
+            width: 0%;
+            height: 100%;
+            background: linear-gradient(90deg, var(--gold), var(--gold-light));
+            animation: loaderProgress 1.2s 0.5s ease forwards;
+        }
+        @keyframes loaderFadeIn {
+            to { opacity: 1; }
+        }
+        @keyframes loaderProgress {
+            to { width: 100%; }
+        }
+
+        /* ═══════════════════════════════════════════
+           SCROLL PROGRESS BAR
+        ═══════════════════════════════════════════ */
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--gold), var(--gold-light), var(--gold));
+            z-index: 1001;
+            transition: width 0.1s linear;
+        }
+
+        /* ═══════════════════════════════════════════
+           BACK TO TOP BUTTON
+        ═══════════════════════════════════════════ */
+        .back-to-top {
+            position: fixed;
+            bottom: 32px;
+            right: 32px;
+            width: 48px;
+            height: 48px;
+            background: var(--bg-dark);
+            border: 1px solid var(--gold-dark);
+            color: var(--gold-light);
+            font-size: 0.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 998;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: all 0.4s var(--ease-out);
+        }
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .back-to-top:hover {
+            background: var(--gold);
+            border-color: var(--gold);
+            color: var(--white);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(139, 105, 20, 0.3);
+        }
+
+        /* ═══════════════════════════════════════════
+           CUSTOM SCROLLBAR
+        ═══════════════════════════════════════════ */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--bg-cream);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--gold-pale);
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--gold-light);
+        }
+
+        /* ═══════════════════════════════════════════
+           FOCUS VISIBLE (Accessibility)
+        ═══════════════════════════════════════════ */
+        *:focus-visible {
+            outline: 2px solid var(--gold);
+            outline-offset: 3px;
+        }
+        .btn:focus-visible {
+            outline-offset: 4px;
+            box-shadow: 0 0 0 4px rgba(139, 105, 20, 0.15);
+        }
+        input:focus-visible, textarea:focus-visible, select:focus-visible {
+            outline: none;
+            border-color: var(--gold);
+            box-shadow: 0 0 0 3px rgba(139, 105, 20, 0.1);
+        }
+
+        /* ═══════════════════════════════════════════
+           HERO FLOATING GEOMETRY
+        ═══════════════════════════════════════════ */
+        .hero__float {
+            position: absolute;
+            border: 1px solid rgba(196, 165, 90, 0.08);
+            pointer-events: none;
+            z-index: 1;
+        }
+        .hero__float--1 {
+            width: 300px;
+            height: 300px;
+            top: 10%;
+            left: -5%;
+            transform: rotate(45deg);
+            animation: floatSlow 20s infinite ease-in-out;
+        }
+        .hero__float--2 {
+            width: 200px;
+            height: 200px;
+            bottom: 15%;
+            right: -3%;
+            border-radius: 50%;
+            border-color: rgba(196, 165, 90, 0.06);
+            animation: floatSlow 15s 3s infinite ease-in-out reverse;
+        }
+        .hero__float--3 {
+            width: 150px;
+            height: 150px;
+            top: 20%;
+            right: 10%;
+            transform: rotate(30deg);
+            animation: floatSlow 18s 6s infinite ease-in-out;
+        }
+        .hero__float--4 {
+            width: 80px;
+            height: 80px;
+            bottom: 30%;
+            left: 12%;
+            border-radius: 50%;
+            border-color: rgba(196, 165, 90, 0.05);
+            animation: floatSlow 12s 2s infinite ease-in-out reverse;
+        }
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0) rotate(var(--float-rotate, 45deg)); }
+            50% { transform: translateY(-30px) rotate(var(--float-rotate, 45deg)); }
+        }
+        .hero__float--1 { --float-rotate: 45deg; }
+        .hero__float--2 { --float-rotate: 0deg; }
+        .hero__float--3 { --float-rotate: 30deg; }
+        .hero__float--4 { --float-rotate: 0deg; }
+
+        /* ═══════════════════════════════════════════
+           ENHANCED INTRO STRIP — COUNTER
+        ═══════════════════════════════════════════ */
+        .intro-strip__number {
+            transition: transform 0.3s var(--ease-spring);
+        }
+        .intro-strip__item:hover .intro-strip__number {
+            transform: scale(1.1);
+            color: var(--gold-dark);
+        }
+        .intro-strip__item {
+            position: relative;
+            transition: transform 0.3s var(--ease-out);
+        }
+        .intro-strip__item:hover {
+            transform: translateY(-4px);
+        }
+        .intro-strip__item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            right: -30px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1px;
+            height: 40px;
+            background: linear-gradient(180deg, transparent, var(--gold-pale), transparent);
+        }
+        @media (max-width: 768px) {
+            .intro-strip__item:not(:last-child)::after { display: none; }
+        }
+
+        /* ═══════════════════════════════════════════
+           ENHANCED ABOUT VISUAL
+        ═══════════════════════════════════════════ */
+        .about__image-frame::before {
+            content: '';
+            position: absolute;
+            inset: 24px;
+            border: 1px solid rgba(139, 105, 20, 0.12);
+            z-index: 1;
+        }
+        .about__image-accent .arabesque {
+            transition: transform 0.8s var(--ease-out);
+        }
+        .about__visual:hover .arabesque {
+            transform: scale(1.08) rotate(3deg);
+        }
+        .about__value {
+            transition: all 0.3s var(--ease-out);
+            padding: 8px;
+            margin: -8px;
+            border-radius: 4px;
+        }
+        .about__value:hover {
+            background: rgba(196, 165, 90, 0.06);
+            transform: translateX(4px);
+        }
+
+        /* ═══════════════════════════════════════════
+           ENHANCED PILLAR CARDS
+        ═══════════════════════════════════════════ */
+        .pillar::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--gold), var(--gold-light));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.5s var(--ease-out);
+        }
+        .pillar:hover::before {
+            transform: scaleX(1);
+        }
+        .pillar__icon {
+            border-radius: 50%;
+        }
+        .pillar:hover .pillar__icon {
+            border-radius: 50%;
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        /* ═══════════════════════════════════════════
+           ECOSYSTEM CONNECTING LINES
+        ═══════════════════════════════════════════ */
+        .ecosystem__ring {
+            position: relative;
+        }
+        .ecosystem__ring::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            right: 5%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--gold-pale), var(--gold-light), var(--gold-pale), transparent);
+            opacity: 0.4;
+            z-index: 0;
+        }
+        .eco-node {
+            z-index: 1;
+        }
+        .eco-node__icon {
+            border-radius: 50%;
+            position: relative;
+            z-index: 2;
+            background: var(--bg-cream);
+        }
+        .eco-node:hover .eco-node__icon {
+            border-radius: 50%;
+            transform: scale(1.15);
+        }
+        .eco-node__stage {
+            transition: all 0.3s;
+        }
+        .eco-node:hover .eco-node__stage {
+            background: var(--gold);
+            color: var(--white);
+            border-color: var(--gold);
+        }
+        @media (max-width: 768px) {
+            .ecosystem__ring::before { display: none; }
+        }
+
+        /* ═══════════════════════════════════════════
+           RESOURCE CARD ENHANCEMENTS
+        ═══════════════════════════════════════════ */
+        .resource-card__badge--free {
+            background: rgba(139, 105, 20, 0.06);
+        }
+        .resource-card__badge--members {
+            background: rgba(139, 105, 20, 0.06);
+            border-color: var(--gold);
+        }
+        .resource-card__badge--soon {
+            background: rgba(139, 105, 20, 0.06);
+            border-color: var(--gold-pale);
+            color: var(--text-light);
+        }
+
+        /* ═══════════════════════════════════════════
+           PARTNER TYPE ENHANCEMENTS
+        ═══════════════════════════════════════════ */
+        .partner-type__icon {
+            border-radius: 50%;
+            transition: all 0.4s var(--ease-out);
+        }
+        .partner-type:hover .partner-type__icon {
+            background: var(--gold);
+            color: var(--white);
+            border-color: var(--gold);
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(139, 105, 20, 0.25);
+        }
+        .partner-type__label {
+            transition: all 0.3s;
+        }
+        .partner-type:hover .partner-type__label {
+            color: var(--gold-pale);
+        }
+
+        /* ═══════════════════════════════════════════
+           ENHANCED CONTACT FORM
+        ═══════════════════════════════════════════ */
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            box-shadow: 0 0 0 3px rgba(139, 105, 20, 0.08);
+        }
+        .form-group label {
+            transition: color 0.3s;
+        }
+        .form-group input:focus + label,
+        .form-group textarea:focus + label,
+        .form-group select:focus + label {
+            color: var(--gold);
+        }
+        /* Note: label comes before input in DOM, so use :focus-within */
+        .form-group:focus-within label {
+            color: var(--gold);
+        }
+        .form-error {
+            border-color: #c0392b !important;
+            box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.08) !important;
+        }
+        .form-success {
+            border-color: var(--gold) !important;
+            box-shadow: 0 0 0 3px rgba(139, 105, 20, 0.12) !important;
+        }
+        .btn--sent {
+            background: var(--gold-dark) !important;
+            pointer-events: none;
+        }
+
+        /* ═══════════════════════════════════════════
+           ENHANCED NEWSLETTER
+        ═══════════════════════════════════════════ */
+        .newsletter {
+            position: relative;
+            overflow: hidden;
+        }
+        .newsletter::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                radial-gradient(ellipse at 20% 50%, rgba(139, 105, 20, 0.04) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 50%, rgba(139, 105, 20, 0.04) 0%, transparent 50%);
+            pointer-events: none;
+        }
+        .newsletter__input:focus {
+            box-shadow: 0 0 0 3px rgba(139, 105, 20, 0.08);
+        }
+
+        /* ═══════════════════════════════════════════
+           BUTTON MICRO-INTERACTIONS
+        ═══════════════════════════════════════════ */
+        .btn::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+        .btn:active::after {
+            width: 300px;
+            height: 300px;
+        }
+
+        /* ═══════════════════════════════════════════
+           AUDIENCE CARD ENHANCEMENTS
+        ═══════════════════════════════════════════ */
+        .audience__card {
+            overflow: hidden;
+        }
+        .audience__card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 0;
+            background: linear-gradient(180deg, var(--gold), var(--gold-light));
+            transition: height 0.6s var(--ease-out);
+        }
+        .audience__card:hover::before {
+            height: 100%;
+        }
+        .audience__card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 60px rgba(58, 42, 8, 0.1);
+        }
+        .audience__card--ind:hover {
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        /* ═══════════════════════════════════════════
+           SCIENCE CARD ENHANCEMENTS
+        ═══════════════════════════════════════════ */
+        .science__card-icon {
+            transition: transform 0.4s var(--ease-spring);
+        }
+        .science__card:hover .science__card-icon {
+            transform: scale(1.2) rotate(-5deg);
+        }
+
+        /* ═══════════════════════════════════════════
+           DIET QUOTE ENHANCEMENT
+        ═══════════════════════════════════════════ */
+        .diet__quote {
+            overflow: hidden;
+        }
+        .diet__quote::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--gold-dark), var(--gold), var(--gold-dark));
+        }
+
+        /* ═══════════════════════════════════════════
+           SECTION DIVIDER ORNAMENTS
+        ═══════════════════════════════════════════ */
+        .section-label {
+            position: relative;
+        }
+
+        /* ═══════════════════════════════════════════
+           SMOOTH NUMBER COUNTER
+        ═══════════════════════════════════════════ */
+        .counter-animated {
+            display: inline-block;
+        }
+
+        /* ═══════════════════════════════════════════
+           MISSION BAND ENHANCEMENT
+        ═══════════════════════════════════════════ */
+        .mission-band__item {
+            transition: transform 0.4s var(--ease-out);
+        }
+        .mission-band__item:hover {
+            transform: translateY(-4px);
+        }
+        .mission-band__label {
+            position: relative;
+            display: inline-block;
+        }
+        .mission-band__label::after {
+            content: '';
+            display: block;
+            width: 24px;
+            height: 1px;
+            background: var(--gold-dark);
+            margin: 12px auto 0;
+        }
+
+        /* ═══════════════════════════════════════════
+           FOOTER SOCIAL ENHANCEMENT
+        ═══════════════════════════════════════════ */
+        .footer__social a {
+            border-radius: 50%;
+        }
+
+        /* ═══════════════════════════════════════════
+           SELECTION HIGHLIGHT
+        ═══════════════════════════════════════════ */
+        .text-gold { color: var(--gold); }
+        .text-highlight {
+            position: relative;
+            display: inline;
+        }
+        .text-highlight::after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background: rgba(196, 165, 90, 0.15);
+            z-index: -1;
+        }
+
+        /* ═══════════════════════════════════════════
+           UTILITY CLASSES (replacing inline styles)
+        ═══════════════════════════════════════════ */
+        .text-center { text-align: center; }
+        .mb-80 { margin-bottom: 80px; }
+        .mx-auto { margin-left: auto; margin-right: auto; }
+        .mx-auto-mb-40 { margin: 0 auto 40px; }
+        .self-start { align-self: flex-start; }
+        .diet__difference-heading {
+            font-size: 1.8rem;
+            margin-bottom: 32px;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        /* ═══════════════════════════════════════════
+           FOOD GROUPS GRID
+        ═══════════════════════════════════════════ */
+        .diet__foods {
+            margin-top: 80px;
+            padding-top: 60px;
+            border-top: 1px solid var(--border);
+        }
+        .diet__foods-header {
+            margin-bottom: 48px;
+        }
+        .diet__foods-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        .food-group {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 24px;
+            background: var(--bg-cream);
+            border: 1px solid transparent;
+            transition: all 0.4s var(--ease-out);
+        }
+        .food-group:hover {
+            border-color: var(--gold-light);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 36px rgba(58, 42, 8, 0.06);
+        }
+        .food-group__icon {
+            width: 40px;
+            height: 40px;
+            border: 1px solid var(--gold-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            color: var(--gold);
+            font-size: 0.85rem;
+            transition: all 0.3s;
+        }
+        .food-group:hover .food-group__icon {
+            background: var(--gold);
+            color: var(--white);
+            border-color: var(--gold);
+        }
+        .food-group__name {
+            font-family: var(--font-display);
+            font-size: 1.05rem;
+            font-weight: 500;
+            color: var(--text-dark);
+            margin-bottom: 4px;
+        }
+        .food-group__desc {
+            font-size: 0.78rem;
+            color: var(--text-mid);
+            line-height: 1.6;
+        }
+        @media (max-width: 1024px) {
+            .diet__foods-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 768px) {
+            .diet__foods-grid { grid-template-columns: 1fr; }
+        }
+
+        /* ═══════════════════════════════════════════
+           FULL PROFESSIONALS SECTION
+        ═══════════════════════════════════════════ */
+        .professionals {
+            background: var(--bg-section);
+            position: relative;
+        }
+        .professionals__grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: start;
+        }
+        .professionals__benefits {
+            list-style: none;
+        }
+        .professionals__benefits li {
+            padding: 14px 0;
+            font-size: 0.88rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            border-bottom: 1px solid var(--border);
+        }
+        .professionals__benefits li:last-child {
+            border-bottom: none;
+        }
+        .professionals__benefits li i {
+            color: var(--gold);
+            font-size: 0.65rem;
+            flex-shrink: 0;
+            margin-top: 5px;
+        }
+        .membership-tiers {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 48px;
+        }
+        .tier {
+            padding: 32px 24px;
+            border: 1px solid var(--border);
+            text-align: center;
+            transition: all 0.4s var(--ease-out);
+            background: var(--white);
+        }
+        .tier:hover {
+            border-color: var(--gold-light);
+            transform: translateY(-4px);
+            box-shadow: 0 16px 40px rgba(58, 42, 8, 0.08);
+        }
+        .tier__name {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+        }
+        .tier__desc {
+            font-size: 0.75rem;
+            color: var(--text-mid);
+            line-height: 1.6;
+        }
+        .tier__icon {
+            font-size: 1.2rem;
+            color: var(--gold);
+            margin-bottom: 16px;
+        }
+        .webinar-banner {
+            margin-top: 48px;
+            padding: 36px 40px;
+            background: var(--bg-dark);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+        .webinar-banner__text {
+            font-family: var(--font-display);
+            font-size: 1.3rem;
+            font-weight: 400;
+            color: var(--gold-pale);
+        }
+        .webinar-banner__text span {
+            display: block;
+            font-family: var(--font-body);
+            font-size: 0.78rem;
+            font-weight: 300;
+            color: rgba(240, 234, 214, 0.5);
+            margin-top: 6px;
+            font-style: normal;
+        }
+        @media (max-width: 768px) {
+            .professionals__grid { grid-template-columns: 1fr; gap: 40px; }
+            .membership-tiers { grid-template-columns: 1fr; }
+        }
+
+        /* ═══════════════════════════════════════════
+           FULL INDIVIDUALS SECTION
+        ═══════════════════════════════════════════ */
+        .individuals {
+            background: var(--white);
+        }
+        .individuals__grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: start;
+        }
+        .individuals__gains {
+            list-style: none;
+        }
+        .individuals__gains li {
+            padding: 14px 0;
+            font-size: 0.88rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            border-bottom: 1px solid var(--border);
+        }
+        .individuals__gains li:last-child {
+            border-bottom: none;
+        }
+        .individuals__gains li i {
+            color: var(--gold);
+            font-size: 0.65rem;
+            flex-shrink: 0;
+            margin-top: 5px;
+        }
+        .how-it-works {
+            counter-reset: step;
+        }
+        .how-it-works__step {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 24px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .how-it-works__step:last-child {
+            border-bottom: none;
+        }
+        .how-it-works__num {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-weight: 300;
+            color: var(--gold-light);
+            line-height: 1;
+            flex-shrink: 0;
+            width: 36px;
+        }
+        .how-it-works__title {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--text-dark);
+            margin-bottom: 4px;
+        }
+        .how-it-works__desc {
+            font-size: 0.82rem;
+            color: var(--text-mid);
+            line-height: 1.7;
+        }
+        .individuals__actions {
+            display: flex;
+            gap: 16px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        @media (max-width: 768px) {
+            .individuals__grid { grid-template-columns: 1fr; gap: 40px; }
+        }
+
+        /* ═══════════════════════════════════════════
+           CONSULTATIONS COMING SOON
+        ═══════════════════════════════════════════ */
+        .consultations-teaser {
+            padding: 80px 0;
+            background: var(--bg-warm);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            text-align: center;
+        }
+        .consultations-teaser__badge {
+            display: inline-block;
+            font-family: var(--font-body);
+            font-size: 0.6rem;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--gold);
+            border: 1px solid var(--gold-light);
+            padding: 6px 20px;
+            margin-bottom: 24px;
+        }
+        .consultations-teaser h3 {
+            font-family: var(--font-display);
+            font-size: clamp(1.6rem, 3vw, 2.4rem);
+            font-weight: 400;
+            color: var(--text-dark);
+            margin-bottom: 16px;
+        }
+        .consultations-teaser p {
+            font-size: 0.92rem;
+            color: var(--text-mid);
+            max-width: 560px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ═══════════ PAGE LOADER ═══════════ -->
+    <div class="page-loader" id="pageLoader">
+        <img src="logo.jpeg" alt="Loading Well Arabia" class="page-loader__logo">
+        <div class="page-loader__bar">
+            <div class="page-loader__bar-fill"></div>
+        </div>
+    </div>
+
+    <!-- ═══════════ SCROLL PROGRESS ═══════════ -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- ═══════════ NAVIGATION ═══════════ -->
+    <nav class="nav" id="nav">
+        <div class="nav__inner">
+            <img src="logo.jpeg" alt="Well Arabia" class="nav__logo">
+            <ul class="nav__links">
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#diet" class="nav__link">The Diet</a></li>
+                <li><a href="#professionals" class="nav__link">Professionals</a></li>
+                <li><a href="#individuals" class="nav__link">Individuals</a></li>
+                <li><a href="#resources" class="nav__link">Resources</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+            <a href="#newsletter" class="nav__cta">Subscribe</a>
+            <div class="nav__hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu__close" id="closeMenu">&times;</button>
+        <a href="#about" onclick="closeMobile()">About</a>
+        <a href="#diet" onclick="closeMobile()">The Diet</a>
+        <a href="#professionals" onclick="closeMobile()">For Professionals</a>
+        <a href="#individuals" onclick="closeMobile()">For Individuals</a>
+        <a href="#resources" onclick="closeMobile()">Resources</a>
+        <a href="#contact" onclick="closeMobile()">Contact</a>
+    </div>
+
+    <!-- ═══════════ HERO ═══════════ -->
+    <section class="hero" id="home">
+        <div class="hero__bg"></div>
+        <div class="hero__pattern"></div>
+        <div class="hero__float hero__float--1"></div>
+        <div class="hero__float hero__float--2"></div>
+        <div class="hero__float hero__float--3"></div>
+        <div class="hero__float hero__float--4"></div>
+        <div class="hero__content">
+            <img src="logo.jpeg" alt="Well Arabia" class="hero__logo-mark">
+            <h1 class="hero__title">Heritage Wellness,<br><em>Rooted in Science</em></h1>
+            <div class="hero__line"></div>
+            <p class="hero__subtitle">A holistic diet model rooted in Arab-Islamic food philosophy — integrating heritage foods, seasonal eating, and holistic well-being with AI-powered personalization and modern nutritional science.</p>
+            <div class="hero__actions">
+                <a href="#diet" class="btn btn--primary">Explore the Diet</a>
+                <a href="#newsletter" class="btn btn--outline">Subscribe</a>
+            </div>
+        </div>
+        <div class="hero__scroll">
+            <span>Discover</span>
+            <div class="hero__scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ═══════════ INTRO STRIP ═══════════ -->
+    <div class="intro-strip">
+        <div class="container">
+            <div class="intro-strip__inner">
+                <div class="intro-strip__item reveal">
+                    <div class="intro-strip__number">1st</div>
+                    <div class="intro-strip__text">Holistic Arab-Islamic heritage diet platform in MENA</div>
+                </div>
+                <div class="intro-strip__item reveal reveal-delay-1">
+                    <div class="intro-strip__number">5</div>
+                    <div class="intro-strip__text">Integrated pillars — diet, education, products, consultancy & AI</div>
+                </div>
+                <div class="intro-strip__item reveal reveal-delay-2">
+                    <div class="intro-strip__number">∞</div>
+                    <div class="intro-strip__text">Centuries of culinary heritage, scientifically validated</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════ ABOUT ═══════════ -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__grid">
+                <div class="about__visual reveal">
+                    <div class="about__image-frame"></div>
+                    <div class="about__image-accent">
+                        <div class="arabesque">ع</div>
+                    </div>
+                </div>
+                <div class="about__text reveal reveal-delay-1">
+                    <span class="section-label">About Well Arabia</span>
+                    <h2 class="section-title">Where Heritage<br>Meets Healing</h2>
+                    <div class="divider"></div>
+                    <p>Across the MENA region, rising rates of diet-related chronic disease coincide with the erosion of centuries-old food traditions. Western dietary models dominate clinical practice, yet they often lack the cultural relevance needed to drive lasting change. The ancestral wisdom that once shaped how entire communities ate, healed, and thrived is at risk of being lost.</p>
+                    <p>Well Arabia exists to reverse that loss. We are a women-led, community-centered platform that scientifically validates, digitizes, and personalizes Arab-Islamic heritage diets — making them accessible to individuals, health professionals, and institutions across the MENA region and the global Arab diaspora.</p>
+                    <p>Our expert team spans business strategy, clinical nutrition, food science, heritage research, and digital communication — united by the conviction that the richest solutions to today's health challenges already exist in the food traditions our grandmothers preserved.</p>
+                    <div class="about__values">
+                        <div class="about__value">
+                            <div class="about__value-icon"><i class="fas fa-leaf"></i></div>
+                            <span class="about__value-text">Culturally rooted, science-backed wellness</span>
+                        </div>
+                        <div class="about__value">
+                            <div class="about__value-icon"><i class="fas fa-users"></i></div>
+                            <span class="about__value-text">Women-led, community-centered</span>
+                        </div>
+                        <div class="about__value">
+                            <div class="about__value-icon"><i class="fas fa-brain"></i></div>
+                            <span class="about__value-text">AI-powered personalization with cultural integrity</span>
+                        </div>
+                        <div class="about__value">
+                            <div class="about__value-icon"><i class="fas fa-seedling"></i></div>
+                            <span class="about__value-text">Ethical sourcing & sustainability</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ MISSION & VISION ═══════════ -->
+    <div class="mission-band">
+        <div class="mission-band__pattern"></div>
+        <div class="container">
+            <div class="mission-band__grid">
+                <div class="mission-band__item reveal">
+                    <div class="mission-band__label">Our Mission</div>
+                    <p class="mission-band__text">To reclaim and revitalize Arab-Islamic dietary heritage through science, technology, and community — creating culturally authentic health solutions for a modern world.</p>
+                </div>
+                <div class="mission-band__divider"></div>
+                <div class="mission-band__item reveal reveal-delay-2">
+                    <div class="mission-band__label">Our Vision</div>
+                    <p class="mission-band__text">A world where heritage diets are recognized as a cornerstone of preventive health — and where every Arab community has access to culturally relevant, science-backed nutrition.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════ THE WELL ARABIA DIET ═══════════ -->
+    <section class="diet" id="diet">
+        <div class="container">
+            <div class="diet__header reveal">
+                <span class="section-label">The Well Arabia Diet</span>
+                <h2 class="section-title">A Living Model of<br>Ancestral Nutrition</h2>
+                <p class="section-subtitle">Rooted in centuries of Arab-Islamic food philosophy, our dietary model integrates traditional food groups, seasonal eating patterns, and holistic well-being principles.</p>
+            </div>
+
+            <div class="diet__pillars">
+                <div class="pillar reveal">
+                    <div class="pillar__icon"><i class="fas fa-wheat-awn"></i></div>
+                    <h3 class="pillar__title">Heritage Foods</h3>
+                    <p class="pillar__desc">Traditional grains, legumes, fermented foods, and ancestral preparations — from kishek to freekeh — scientifically profiled.</p>
+                </div>
+                <div class="pillar reveal reveal-delay-1">
+                    <div class="pillar__icon"><i class="fas fa-heart-pulse"></i></div>
+                    <h3 class="pillar__title">Holistic Wellness</h3>
+                    <p class="pillar__desc">Beyond nutrition — integrating movement, rest, fasting traditions, and seasonal rhythms into a complete lifestyle framework.</p>
+                </div>
+                <div class="pillar reveal reveal-delay-2">
+                    <div class="pillar__icon"><i class="fas fa-brain"></i></div>
+                    <h3 class="pillar__title">AI Personalization</h3>
+                    <p class="pillar__desc">Intelligent dietary recommendations that respect cultural preferences while addressing individual health goals and conditions.</p>
+                </div>
+                <div class="pillar reveal reveal-delay-3">
+                    <div class="pillar__icon"><i class="fas fa-microscope"></i></div>
+                    <h3 class="pillar__title">Scientific Validation</h3>
+                    <p class="pillar__desc">Every recommendation grounded in peer-reviewed research, nutritional analysis, and collaboration with academic institutions.</p>
+                </div>
+            </div>
+
+            <!-- Food Groups -->
+            <div class="diet__foods reveal">
+                <div class="diet__foods-header">
+                    <span class="section-label">Heritage Food Groups</span>
+                    <h3 class="diet__difference-heading">The Arab Table Model</h3>
+                </div>
+                <div class="diet__foods-grid">
+                    <div class="food-group reveal">
+                        <div class="food-group__icon"><i class="fas fa-wheat-awn"></i></div>
+                        <div>
+                            <div class="food-group__name">Ancient Grains</div>
+                            <div class="food-group__desc">Freekeh, bulgur, barley, and millet — the staple grains of heritage Arab cuisine, rich in fiber and micronutrients.</div>
+                        </div>
+                    </div>
+                    <div class="food-group reveal reveal-delay-1">
+                        <div class="food-group__icon"><i class="fas fa-seedling"></i></div>
+                        <div>
+                            <div class="food-group__name">Legumes & Pulses</div>
+                            <div class="food-group__desc">Lentils, chickpeas, fava beans, and lupini — protein-dense staples central to daily Arab meals for centuries.</div>
+                        </div>
+                    </div>
+                    <div class="food-group reveal reveal-delay-2">
+                        <div class="food-group__icon"><i class="fas fa-jar"></i></div>
+                        <div>
+                            <div class="food-group__name">Fermented Foods</div>
+                            <div class="food-group__desc">Kishek, labneh, preserved lemons, and pickled vegetables — ancestral probiotics that support gut health.</div>
+                        </div>
+                    </div>
+                    <div class="food-group reveal">
+                        <div class="food-group__icon"><i class="fas fa-mortar-pestle"></i></div>
+                        <div>
+                            <div class="food-group__name">Herbs & Spices</div>
+                            <div class="food-group__desc">Za'atar, sumac, cumin, turmeric, and black seed — medicinal botanicals with documented health properties.</div>
+                        </div>
+                    </div>
+                    <div class="food-group reveal reveal-delay-1">
+                        <div class="food-group__icon"><i class="fas fa-bottle-droplet"></i></div>
+                        <div>
+                            <div class="food-group__name">Oils & Fats</div>
+                            <div class="food-group__desc">Olive oil, ghee, tahini, and sesame — traditional healthy fats used in cooking, preservation, and remedy.</div>
+                        </div>
+                    </div>
+                    <div class="food-group reveal reveal-delay-2">
+                        <div class="food-group__icon"><i class="fas fa-apple-whole"></i></div>
+                        <div>
+                            <div class="food-group__name">Seasonal Fruits & Produce</div>
+                            <div class="food-group__desc">Dates, figs, pomegranates, and seasonal harvests — aligned with traditional agricultural rhythms and fasting cycles.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Research Foundation (from Science & Heritage) -->
+            <div class="diet__foods reveal" id="science">
+                <div class="diet__foods-header">
+                    <span class="section-label">Science & Heritage</span>
+                    <h3 class="diet__difference-heading">The Research Foundation</h3>
+                </div>
+                <div class="science__grid">
+                    <div class="science__card reveal">
+                        <div class="science__card-icon"><i class="fas fa-scroll"></i></div>
+                        <h3 class="science__card-title">Historical Sources</h3>
+                        <p class="science__card-text">Drawing from classical Arab-Islamic texts on food, medicine, and nutrition — a treasury of dietary wisdom spanning centuries of documented practice and observation.</p>
+                    </div>
+                    <div class="science__card reveal reveal-delay-1">
+                        <div class="science__card-icon"><i class="fas fa-flask-vial"></i></div>
+                        <h3 class="science__card-title">Nutritional Analysis</h3>
+                        <p class="science__card-text">Comprehensive profiling of heritage foods — from kishek's probiotic properties to freekeh's fiber content — establishing the scientific basis for traditional dietary claims.</p>
+                    </div>
+                    <div class="science__card reveal reveal-delay-2">
+                        <div class="science__card-icon"><i class="fas fa-building-columns"></i></div>
+                        <h3 class="science__card-title">Academic Partnerships</h3>
+                        <p class="science__card-text">Collaborating with universities across Beirut and the GCC to conduct peer-reviewed research, ensuring our dietary recommendations meet the highest standards of evidence.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="diet__difference">
+                <div class="reveal">
+                    <span class="section-label">What Makes It Different</span>
+                    <h3 class="diet__difference-heading">Not Another Diet.<br>A Cultural Reclamation.</h3>
+                    <ul class="diet__difference-list">
+                        <li><span class="num">01</span> <span>Rooted in Arab-Islamic food philosophy, not Western dietary trends imported without cultural context</span></li>
+                        <li><span class="num">02</span> <span>AI-powered personalization that preserves cultural integrity and culinary identity</span></li>
+                        <li><span class="num">03</span> <span>An integrated ecosystem connecting diet, education, products, and professional consultancy</span></li>
+                        <li><span class="num">04</span> <span>Community-driven and women-led, built from the ground up with local farmers and cooperatives</span></li>
+                        <li><span class="num">05</span> <span>Academic partnerships ensuring rigorous scientific methodology at every stage</span></li>
+                    </ul>
+                </div>
+                <div class="reveal reveal-delay-2">
+                    <div class="diet__quote">
+                        <p>The food of our ancestors was not simply sustenance — it was medicine, ritual, identity, and community. Well Arabia returns to this truth with the tools of modern science.</p>
+                        <cite>Well Arabia Founding Philosophy</cite>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ FOR PROFESSIONALS ═══════════ -->
+    <section class="professionals" id="professionals">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">For Professionals</span>
+                <h2 class="section-title">Elevate Your Practice<br>With Heritage Nutrition</h2>
+                <p class="section-subtitle mx-auto">Whether you're a dietitian, nutrition professional, or holistic coach — Well Arabia equips you with culturally rooted, science-backed tools to better serve your clients and community.</p>
+            </div>
+
+            <div class="professionals__grid">
+                <div class="reveal">
+                    <span class="section-label">Why Join Well Arabia</span>
+                    <h3 class="diet__difference-heading">Tools, Network,<br>and Visibility</h3>
+                    <ul class="professionals__benefits">
+                        <li><i class="fas fa-check"></i> Heritage-based clinical nutrition resources and patient handouts</li>
+                        <li><i class="fas fa-check"></i> AI-assisted client management and dietary planning tools</li>
+                        <li><i class="fas fa-check"></i> Network visibility, referral opportunities, and practitioner directory listing</li>
+                        <li><i class="fas fa-check"></i> Exclusive webinars, workshops, and continuing professional development</li>
+                        <li><i class="fas fa-check"></i> Consultation frameworks grounded in Arab-Islamic dietary heritage</li>
+                        <li><i class="fas fa-check"></i> Certification pathways and partnership opportunities with institutions</li>
+                    </ul>
+                </div>
+                <div class="reveal reveal-delay-2">
+                    <span class="section-label">Membership Categories</span>
+                    <h3 class="diet__difference-heading">Choose Your Tier</h3>
+                    <div class="membership-tiers">
+                        <div class="tier">
+                            <div class="tier__icon"><i class="fas fa-user"></i></div>
+                            <div class="tier__name">Basic</div>
+                            <div class="tier__desc">Access to free resources, community forums, and introductory webinars</div>
+                        </div>
+                        <div class="tier">
+                            <div class="tier__icon"><i class="fas fa-user-tie"></i></div>
+                            <div class="tier__name">Professional</div>
+                            <div class="tier__desc">Full toolkit access, AI tools, directory listing, and exclusive training programs</div>
+                        </div>
+                        <div class="tier">
+                            <div class="tier__icon"><i class="fas fa-building"></i></div>
+                            <div class="tier__name">Institutional</div>
+                            <div class="tier__desc">Multi-seat access for clinics, schools, and wellness centers with custom advisory</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Webinar Banner -->
+            <div class="webinar-banner reveal">
+                <div class="webinar-banner__text">
+                    Live Webinars & Professional Development
+                    <span>Join our regular expert-led sessions on heritage nutrition, clinical applications, and AI-powered dietary tools.</span>
+                </div>
+                <a href="#contact" class="btn btn--primary">Join the Community</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ FOR INDIVIDUALS ═══════════ -->
+    <section class="individuals" id="individuals">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">For Individuals</span>
+                <h2 class="section-title">Reclaim Your Wellness<br>Through Heritage</h2>
+                <p class="section-subtitle mx-auto">Discover a health path that honors your cultural identity — with personalized guidance, ancestral recipes, and a community that understands your relationship with food.</p>
+            </div>
+
+            <div class="individuals__grid">
+                <div class="reveal">
+                    <span class="section-label">What You Gain</span>
+                    <h3 class="diet__difference-heading">Health, Simplicity,<br>Cultural Relevance</h3>
+                    <ul class="individuals__gains">
+                        <li><i class="fas fa-check"></i> Culturally relevant dietary guidance rooted in your heritage</li>
+                        <li><i class="fas fa-check"></i> AI-powered personalized meal plans that respect your cultural preferences</li>
+                        <li><i class="fas fa-check"></i> Heritage recipe library with complete nutritional profiles</li>
+                        <li><i class="fas fa-check"></i> 1-on-1 coaching with certified heritage nutrition practitioners</li>
+                        <li><i class="fas fa-check"></i> Community workshops, seasonal programs, and group learning</li>
+                        <li><i class="fas fa-check"></i> Subscription plans for ongoing wellness support and premium content</li>
+                    </ul>
+                </div>
+                <div class="reveal reveal-delay-2">
+                    <span class="section-label">How It Works</span>
+                    <h3 class="diet__difference-heading">Your Journey<br>in Four Steps</h3>
+                    <div class="how-it-works">
+                        <div class="how-it-works__step">
+                            <div class="how-it-works__num">01</div>
+                            <div>
+                                <div class="how-it-works__title">Share Your Story</div>
+                                <div class="how-it-works__desc">Tell us about your health goals, cultural background, dietary preferences, and any conditions we should consider.</div>
+                            </div>
+                        </div>
+                        <div class="how-it-works__step">
+                            <div class="how-it-works__num">02</div>
+                            <div>
+                                <div class="how-it-works__title">Receive Your Heritage Plan</div>
+                                <div class="how-it-works__desc">Our AI creates a personalized diet plan drawing from heritage food groups, seasonal eating patterns, and modern nutritional science.</div>
+                            </div>
+                        </div>
+                        <div class="how-it-works__step">
+                            <div class="how-it-works__num">03</div>
+                            <div>
+                                <div class="how-it-works__title">Connect With a Practitioner</div>
+                                <div class="how-it-works__desc">Book a consultation with a certified heritage nutrition coach for guidance, adjustments, and ongoing accountability.</div>
+                            </div>
+                        </div>
+                        <div class="how-it-works__step">
+                            <div class="how-it-works__num">04</div>
+                            <div>
+                                <div class="how-it-works__title">Grow With the Community</div>
+                                <div class="how-it-works__desc">Join workshops, access seasonal recipes, and connect with others on the same heritage wellness journey.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="individuals__actions reveal">
+                <a href="#contact" class="btn btn--primary">Start Your Journey</a>
+                <a href="#consultations" class="btn btn--dark">Book a Free Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ CONSULTATIONS TEASER ═══════════ -->
+    <div class="consultations-teaser" id="consultations">
+        <div class="container reveal">
+            <span class="consultations-teaser__badge">Coming Soon</span>
+            <h3>Book a Heritage Nutrition Consultation</h3>
+            <p>We're building a network of certified heritage nutrition practitioners. Soon you'll be able to browse specialties, view practitioner profiles, and book consultations directly through our platform.</p>
+            <div class="divider divider--center"></div>
+            <a href="#contact" class="btn btn--dark">Get Notified When We Launch</a>
+        </div>
+    </div>
+
+    <!-- ═══════════ ECOSYSTEM ═══════════ -->
+    <section class="ecosystem" id="ecosystem">
+        <div class="container container--wide">
+            <div class="ecosystem__header reveal">
+                <span class="section-label">The Ecosystem</span>
+                <h2 class="section-title">Five Pillars,<br>One Integrated Platform</h2>
+                <p class="section-subtitle mx-auto">Each pillar of Well Arabia connects to the others — creating a self-reinforcing ecosystem where content fuels consultancy, products enable practice, and education builds community.</p>
+            </div>
+
+            <div class="ecosystem__ring">
+                <div class="eco-node reveal">
+                    <div class="eco-node__icon"><i class="fas fa-book-open"></i></div>
+                    <h4 class="eco-node__title">Content & Education</h4>
+                    <p class="eco-node__desc">Recipes, nutrition articles, e-learning courses, and heritage diet research — delivered through our website, social media, and educational platforms</p>
+                    <span class="eco-node__stage">Phase 1</span>
+                </div>
+                <div class="eco-node reveal reveal-delay-1">
+                    <div class="eco-node__icon"><i class="fas fa-robot"></i></div>
+                    <h4 class="eco-node__title">AI Personalization</h4>
+                    <p class="eco-node__desc">AI-supported diet and wellness models that generate smart recommendations while preserving cultural integrity</p>
+                    <span class="eco-node__stage">Phase 2</span>
+                </div>
+                <div class="eco-node reveal reveal-delay-2">
+                    <div class="eco-node__icon"><i class="fas fa-box-open"></i></div>
+                    <h4 class="eco-node__title">Heritage Products</h4>
+                    <p class="eco-node__desc">Branded heritage health food products developed with local farmers, cooperatives, and ethical sourcing partners</p>
+                    <span class="eco-node__stage">Phase 2</span>
+                </div>
+                <div class="eco-node reveal reveal-delay-3">
+                    <div class="eco-node__icon"><i class="fas fa-handshake"></i></div>
+                    <h4 class="eco-node__title">Consultancy & Advisory</h4>
+                    <p class="eco-node__desc">B2B and B2C advisory services for heritage restaurants, clinics, wellness institutions, and food producers</p>
+                    <span class="eco-node__stage">Phase 1</span>
+                </div>
+                <div class="eco-node reveal reveal-delay-4">
+                    <div class="eco-node__icon"><i class="fas fa-certificate"></i></div>
+                    <h4 class="eco-node__title">Certification & Labeling</h4>
+                    <p class="eco-node__desc">Certification frameworks and labeling standards for heritage health products and producers</p>
+                    <span class="eco-node__stage">Phase 3</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════ RESOURCES ═══════════ -->
+    <section class="resources" id="resources">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Resources & Tools</span>
+                <h2 class="section-title">Knowledge, Freely Shared</h2>
+                <p class="section-subtitle mx-auto">Free resources to start your heritage wellness journey — with deeper tools, courses, and products available to our community members and subscribers.</p>
+            </div>
+
+            <div class="resources__grid">
+                <div class="resource-card reveal">
+                    <span class="resource-card__badge">Free</span>
+                    <h3 class="resource-card__title">Heritage Diet Guides</h3>
+                    <p class="resource-card__text">Introductory guides to Arab heritage foods, their nutritional profiles, and how to incorporate them into modern diets.</p>
+                </div>
+                <div class="resource-card reveal reveal-delay-1">
+                    <span class="resource-card__badge">Free</span>
+                    <h3 class="resource-card__title">Seasonal Eating Calendar</h3>
+                    <p class="resource-card__text">A visual guide to traditional seasonal foods and their health benefits, aligned with regional agricultural cycles.</p>
+                </div>
+                <div class="resource-card reveal reveal-delay-2">
+                    <span class="resource-card__badge">Members</span>
+                    <h3 class="resource-card__title">Research Database</h3>
+                    <p class="resource-card__text">Our growing collection of nutritional analyses, academic papers, and validated heritage diet protocols from partner universities.</p>
+                </div>
+                <div class="resource-card reveal">
+                    <span class="resource-card__badge">Members</span>
+                    <h3 class="resource-card__title">Online Courses & Workshops</h3>
+                    <p class="resource-card__text">E-learning programs on heritage nutrition, seasonal eating, and holistic wellness — including recorded webinars and live training sessions.</p>
+                </div>
+                <div class="resource-card reveal reveal-delay-1">
+                    <span class="resource-card__badge">Coming Soon</span>
+                    <h3 class="resource-card__title">AI Diet Planner</h3>
+                    <p class="resource-card__text">Our AI-powered tool that creates personalized heritage diet plans based on health goals, cultural preferences, and local availability.</p>
+                </div>
+                <div class="resource-card reveal reveal-delay-2">
+                    <span class="resource-card__badge">Coming Soon</span>
+                    <h3 class="resource-card__title">Heritage Product Store</h3>
+                    <p class="resource-card__text">Branded heritage health food products — developed with local farmers and cooperatives using traditional methods and ethical sourcing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ PARTNER CTA ═══════════ -->
+    <section class="partner-cta">
+        <div class="partner-cta__bg"></div>
+        <div class="container partner-cta__content">
+            <span class="section-label reveal">Partner With Us</span>
+            <h2 class="section-title reveal">Join the Ecosystem</h2>
+            <p class="section-subtitle reveal mx-auto-mb-40">Well Arabia is built on partnerships — with heritage restaurants, wellness brands, certified dietitians, local farmers, academic institutions, tech innovators, and public health organizations. There's a role for you in this movement.</p>
+
+            <div class="partner-cta__types reveal">
+                <div class="partner-type">
+                    <div class="partner-type__icon"><i class="fas fa-utensils"></i></div>
+                    <div class="partner-type__label">Heritage Restaurants</div>
+                </div>
+                <div class="partner-type">
+                    <div class="partner-type__icon"><i class="fas fa-store"></i></div>
+                    <div class="partner-type__label">Wellness & Retail</div>
+                </div>
+                <div class="partner-type">
+                    <div class="partner-type__icon"><i class="fas fa-user-doctor"></i></div>
+                    <div class="partner-type__label">Dietitians & Coaches</div>
+                </div>
+                <div class="partner-type">
+                    <div class="partner-type__icon"><i class="fas fa-tractor"></i></div>
+                    <div class="partner-type__label">Farmers & Cooperatives</div>
+                </div>
+                <div class="partner-type">
+                    <div class="partner-type__icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="partner-type__label">Academic Institutions</div>
+                </div>
+                <div class="partner-type">
+                    <div class="partner-type__icon"><i class="fas fa-microchip"></i></div>
+                    <div class="partner-type__label">Tech Partners</div>
+                </div>
+                <div class="partner-type">
+                    <div class="partner-type__icon"><i class="fas fa-globe"></i></div>
+                    <div class="partner-type__label">NGOs & Public Health</div>
+                </div>
+            </div>
+
+            <a href="#contact" class="btn btn--primary reveal">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- ═══════════ CONTACT ═══════════ -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact__grid">
+                <div class="contact__info reveal">
+                    <span class="section-label">Get in Touch</span>
+                    <h3>Let's Build<br>Something Together</h3>
+                    <div class="divider"></div>
+                    <p>Whether you're a potential partner, a health professional interested in joining our network, or an individual seeking heritage-based wellness — we'd love to hear from you.</p>
+                    <div class="contact__detail">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@wellarabia.com</span>
+                    </div>
+                    <div class="contact__detail">
+                        <i class="fas fa-map-pin"></i>
+                        <span>Beirut, Lebanon</span>
+                    </div>
+                    <div class="contact__detail">
+                        <i class="fas fa-globe"></i>
+                        <span>Serving the MENA region & global diaspora</span>
+                    </div>
+                </div>
+                <div class="contact__form reveal reveal-delay-2">
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" placeholder="Full name">
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="your@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label>I Am A</label>
+                        <select>
+                            <option value="">Select your role...</option>
+                            <option>Individual seeking heritage wellness</option>
+                            <option>Dietitian / Nutrition Professional</option>
+                            <option>Holistic Coach / Wellness Practitioner</option>
+                            <option>Heritage Restaurant Owner</option>
+                            <option>Wellness & Retail Brand</option>
+                            <option>Local Farmer / Cooperative</option>
+                            <option>SME / Agri-food Producer</option>
+                            <option>Academic / Researcher</option>
+                            <option>School, Clinic, or Wellness Institution</option>
+                            <option>NGO / Public Health Organization</option>
+                            <option>Tech / Digital Health Partner</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Your Message</label>
+                        <textarea placeholder="Tell us how you'd like to collaborate..."></textarea>
+                    </div>
+                    <button class="btn btn--primary self-start">Send Message</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ NEWSLETTER ═══════════ -->
+    <div class="newsletter" id="newsletter">
+        <div class="container">
+            <div class="newsletter__inner">
+                <div class="newsletter__text">Stay connected to <span>heritage wellness</span></div>
+                <div class="newsletter__form">
+                    <input type="email" class="newsletter__input" placeholder="Enter your email">
+                    <button class="newsletter__submit">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div>
+                    <img src="logo.jpeg" alt="Well Arabia" class="footer__logo">
+                    <p class="footer__brand-desc">The first holistic Arab-Islamic heritage diet platform — bridging ancestral wisdom with modern science for a healthier MENA region.</p>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Platform</h4>
+                    <ul class="footer__links">
+                        <li><a href="#diet">The Well Arabia Diet</a></li>
+                        <li><a href="#professionals">For Professionals</a></li>
+                        <li><a href="#individuals">For Individuals</a></li>
+                        <li><a href="#consultations">Consultations</a></li>
+                        <li><a href="#resources">Resources & Tools</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Company</h4>
+                    <ul class="footer__links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#science">Science & Heritage</a></li>
+                        <li><a href="#ecosystem">The Ecosystem</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#newsletter">Subscribe</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Partners</h4>
+                    <ul class="footer__links">
+                        <li><a href="#contact">Heritage Restaurants</a></li>
+                        <li><a href="#contact">Dietitians & Coaches</a></li>
+                        <li><a href="#contact">Academic Institutions</a></li>
+                        <li><a href="#contact">Farmers & Producers</a></li>
+                        <li><a href="#contact">Wellness & Retail Brands</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__copy">&copy; 2026 Well Arabia. All rights reserved.</div>
+                <div class="footer__social">
+                    <a href="#" aria-label="Follow Well Arabia on Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Follow Well Arabia on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Follow Well Arabia on X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Follow Well Arabia on Facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ═══════════ BACK TO TOP ═══════════ -->
+    <button class="back-to-top" id="backToTop" aria-label="Scroll back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ═══════════ JAVASCRIPT ═══════════ -->
+    <script>
+        // ——— Page Loader ———
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('pageLoader').classList.add('loaded');
+            }, 1800);
+        });
+
+        // ——— Scroll Progress Bar ———
+        const scrollProgressBar = document.getElementById('scrollProgress');
+
+        // ——— Scroll-based nav styling + progress + back-to-top ———
+        const nav = document.getElementById('nav');
+        const backToTop = document.getElementById('backToTop');
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav__link');
+
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollY / docHeight) * 100;
+
+            // Scroll progress bar
+            scrollProgressBar.style.width = scrollPercent + '%';
+
+            // Nav scroll state
+            if (scrollY > 80) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+
+            // Back to top visibility
+            if (scrollY > 600) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+
+            // Active nav link
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 200;
+                if (scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // ——— Back to Top click ———
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // ——— Reveal on scroll ———
+        const reveals = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+        reveals.forEach(el => revealObserver.observe(el));
+
+        // ——— Counter Animation for Intro Strip ———
+        const counterItems = document.querySelectorAll('.intro-strip__number');
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const el = entry.target;
+                    const text = el.textContent.trim();
+
+                    if (text === '5') {
+                        animateCounter(el, 0, 5, 1200);
+                    } else if (text === '1st') {
+                        el.style.opacity = '0';
+                        el.style.transform = 'translateY(20px)';
+                        el.style.transition = 'all 0.6s var(--ease-spring)';
+                        setTimeout(() => {
+                            el.style.opacity = '1';
+                            el.style.transform = 'translateY(0)';
+                        }, 200);
+                    } else if (text === '∞') {
+                        el.style.opacity = '0';
+                        el.style.transform = 'scale(0.5) rotate(-180deg)';
+                        el.style.transition = 'all 0.8s var(--ease-spring)';
+                        setTimeout(() => {
+                            el.style.opacity = '1';
+                            el.style.transform = 'scale(1) rotate(0deg)';
+                        }, 400);
+                    }
+
+                    counterObserver.unobserve(el);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        counterItems.forEach(el => counterObserver.observe(el));
+
+        function animateCounter(el, start, end, duration) {
+            const startTime = performance.now();
+            function update(currentTime) {
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                const eased = 1 - Math.pow(1 - progress, 3);
+                const current = Math.round(start + (end - start) * eased);
+                el.textContent = current;
+                if (progress < 1) {
+                    requestAnimationFrame(update);
+                }
+            }
+            requestAnimationFrame(update);
+        }
+
+        // ——— Subtle Parallax on Hero ———
+        const hero = document.querySelector('.hero__content');
+        const heroFloats = document.querySelectorAll('.hero__float');
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            if (scrollY < window.innerHeight) {
+                hero.style.transform = `translateY(${scrollY * 0.15}px)`;
+                hero.style.opacity = 1 - (scrollY / window.innerHeight) * 0.6;
+                heroFloats.forEach((f, i) => {
+                    const speed = 0.03 + (i * 0.02);
+                    f.style.transform = `translateY(${scrollY * speed}px)`;
+                });
+            }
+        });
+
+        // ——— Mobile menu ———
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const closeMenuBtn = document.getElementById('closeMenu');
+
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        });
+
+        function closeMobile() {
+            mobileMenu.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        closeMenuBtn.addEventListener('click', closeMobile);
+
+        // ——— Smooth scroll for anchor links ———
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // ——— Enhanced Form submission handling ———
+        document.querySelector('.contact__form .btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            const inputs = document.querySelectorAll('.contact__form input, .contact__form textarea, .contact__form select');
+            let filled = true;
+
+            inputs.forEach(input => {
+                input.classList.remove('form-error', 'form-success');
+            });
+
+            inputs.forEach(input => {
+                if (!input.value.trim()) {
+                    filled = false;
+                    input.classList.add('form-error');
+                    input.addEventListener('focus', function handler() {
+                        this.classList.remove('form-error');
+                        this.removeEventListener('focus', handler);
+                    });
+                }
+            });
+
+            // Basic email validation
+            const emailInput = document.querySelector('.contact__form input[type="email"]');
+            if (emailInput.value && !emailInput.value.includes('@')) {
+                filled = false;
+                emailInput.classList.add('form-error');
+            }
+
+            if (filled) {
+                inputs.forEach(input => input.classList.add('form-success'));
+                this.textContent = 'Message Sent ✓';
+                this.classList.add('btn--sent');
+
+                setTimeout(() => {
+                    inputs.forEach(input => {
+                        input.value = '';
+                        input.classList.remove('form-success');
+                    });
+                    this.textContent = 'Send Message';
+                    this.classList.remove('btn--sent');
+                }, 3000);
+            }
+        });
+
+        // ——— Newsletter with enhanced feedback ———
+        document.querySelector('.newsletter__submit').addEventListener('click', function() {
+            const input = document.querySelector('.newsletter__input');
+            if (input.value.includes('@')) {
+                this.textContent = 'Subscribed ✓';
+                this.style.background = 'var(--gold-dark)';
+                input.value = '';
+                input.classList.add('form-success');
+                setTimeout(() => {
+                    this.textContent = 'Subscribe';
+                    this.style.background = '';
+                    input.classList.remove('form-success');
+                }, 3000);
+            } else if (input.value.length > 0) {
+                input.classList.add('form-error');
+                input.addEventListener('focus', function handler() {
+                    this.classList.remove('form-error');
+                    this.removeEventListener('focus', handler);
+                });
+            }
+        });
+
+        // ——— Keyboard: Enter submits newsletter ———
+        document.querySelector('.newsletter__input').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                document.querySelector('.newsletter__submit').click();
+            }
+        });
+    </script>
+</body>
+</html>
