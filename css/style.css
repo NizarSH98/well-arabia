@@ -275,6 +275,9 @@ section {
     justify-content: center;
     transition: opacity 0.8s var(--ease-smooth), visibility 0.8s;
 }
+@media (max-width: 768px) {
+    .loader { display: none !important; }
+}
 .loader.done {
     opacity: 0;
     visibility: hidden;
@@ -2666,18 +2669,14 @@ body:hover .cursor-glow { opacity: 1; }
     section { padding: 80px 0; }
     .container { padding: 0 16px; }
 
-    .nav__links { display: none; }
-    .nav__cta { display: none; }
-    .nav__hamburger { display: flex; }
-    .nav { padding: 8px 16px; }
+    .nav { display: none; }
 
-    .page-hero { padding: 120px 0 60px; }
     .page-hero__title { font-size: clamp(2rem, 8vw, 2.8rem); }
     .page-hero__desc { font-size: 0.95rem; }
 
     /* Hero section mobile */
-    .hero { min-height: calc(100vh - 70px); }
-    .hero__text { padding: 100px 0 80px; }
+    .hero { min-height: 100svh; }
+    .hero__text { padding: 60px 0 80px; }
     .hero__title { font-size: clamp(2.4rem, 9vw, 3.2rem); }
     .hero__desc { font-size: 0.95rem; margin: 20px 0 32px; }
     .hero__logo-badge { width: 50px; height: 50px; margin-bottom: 28px; }
@@ -2685,6 +2684,9 @@ body:hover .cursor-glow { opacity: 1; }
     .hero__actions { flex-direction: column; align-items: center; gap: 12px; }
     .hero__actions .btn { width: 100%; max-width: 300px; justify-content: center; padding: 16px 32px; font-size: 0.85rem; }
     .hero__scroll { bottom: 80px; }
+
+    /* Page hero (inner pages) — remove top padding eating into empty space */
+    .page-hero { padding: 60px 0 60px; }
 
     /* Bento grid mobile */
     .bento { padding: 80px 0; }
