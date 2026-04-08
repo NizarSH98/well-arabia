@@ -63,6 +63,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const scrollBar = document.getElementById('scrollBar');
     const nav = document.getElementById('nav');
     const toTop = document.getElementById('toTop');
+    const bottomNav = document.getElementById('bottomNav');
+    let lastScrollY = 0;
 
     window.addEventListener('scroll', () => {
         const scrollY = window.scrollY;
@@ -72,6 +74,16 @@ document.addEventListener('DOMContentLoaded', () => {
         if (scrollBar) scrollBar.style.width = pct + '%';
         if (nav) nav.classList.toggle('scrolled', scrollY > 60);
         if (toTop) toTop.classList.toggle('visible', scrollY > 500);
+
+        // Bottom nav: hide on scroll down, show on scroll up
+        if (bottomNav) {
+            if (scrollY > lastScrollY && scrollY > 200) {
+                bottomNav.classList.add('hidden');
+            } else {
+                bottomNav.classList.remove('hidden');
+            }
+        }
+        lastScrollY = scrollY;
     });
 
     // ——— Back to top ———
