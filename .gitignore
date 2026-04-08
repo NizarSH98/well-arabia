@@ -1,32 +1,39 @@
-# Ignore OS files
+# ── OS files ──
 .DS_Store
 Thumbs.db
 
-# Ignore node modules (if using Node.js)
+# ── Python / scripts ──
+.venv/
+__pycache__/
+*.py
+*.pyc
+*.pyo
+
+# ── Node / build ──
 node_modules/
-
-# Ignore log files
-*.log
-
-# Ignore build output
 /dist/
 /build/
 
-# Ignore environment files
+# ── Env / secrets ──
 .env
 .env.*
 
-# Ignore Office and PDF documents
+# ── Documents & PDFs ──
 *.pdf
 *.docx
 *.doc
+*.xlsx
+*.pptx
 
-# Ignore specific documents
-Business Model Canvas x Well Arabia.pdf
-MAIN WEBSITE STRUCTURE.docx
+# ── Backup / draft HTML ──
+*_backup.html
+index3*.html
 
-# Ignore Vercel and deployment files
+# ── Raw assets not needed for web ──
+pdf_pages/
+logo.jpeg
+
+# ── Deployment / tooling ──
 .vercel/
-
-# Ignore local git config
 .git/config
+*.log

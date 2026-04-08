@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Well Arabia — a heritage-driven food innovation company bridging Arab dietary wisdom with modern science.">
+    <link rel="icon" type="image/jpeg" href="logo.jpeg">
+    <title>About — Well Arabia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Cursor Glow -->
+    <div class="cursor-glow"></div>
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader__spinner"></div>
+        <img src="logo.jpeg" alt="Loading" class="loader__logo">
+    </div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-bar" id="scrollBar"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <img src="logo.jpeg" alt="Well Arabia" class="nav__logo">
+        <ul class="nav__links">
+            <li><a href="index.html" class="nav__link">Home</a></li>
+            <li><a href="about.html" class="nav__link" aria-current="page">About</a></li>
+            <li class="nav__dropdown">
+                <button class="nav__dropdown-toggle">Solutions <i class="fas fa-chevron-down"></i></button>
+                <div class="nav__dropdown-panel">
+                    <div class="nav__dropdown-grid">
+                        <a href="services.html#professionals" class="nav__dropdown-card nav__dropdown-card--pro">
+                            <div class="nav__dropdown-card-icon"><i class="fas fa-user-doctor"></i></div>
+                            <div class="nav__dropdown-card-title">For Professionals</div>
+                            <div class="nav__dropdown-card-desc">Certifications, AI tools, clinical resources &amp; a growing practitioner network.</div>
+                            <span class="nav__dropdown-card-arrow">Explore <i class="fas fa-arrow-right"></i></span>
+                        </a>
+                        <a href="services.html#individuals" class="nav__dropdown-card nav__dropdown-card--ind">
+                            <div class="nav__dropdown-card-icon"><i class="fas fa-heart-pulse"></i></div>
+                            <div class="nav__dropdown-card-title">For Individuals</div>
+                            <div class="nav__dropdown-card-desc">Personalized meal plans, heritage recipes, 1-on-1 coaching &amp; wellness tracking.</div>
+                            <span class="nav__dropdown-card-arrow">Explore <i class="fas fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                    <div class="nav__dropdown-footer">
+                        <a href="services.html">View All Services <i class="fas fa-arrow-right" style="font-size:0.55rem"></i></a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="nav__cta">Get in Touch</a>
+        <div class="nav__hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mob-menu" id="mobMenu">
+        <button class="mob-menu__close" id="closeMenu">&times;</button>
+        <a href="index.html" onclick="closeMobile()">Home</a>
+        <a href="about.html" onclick="closeMobile()">About</a>
+        <div class="mob-menu__group">
+            <div class="mob-menu__group-title" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">Solutions <i class="fas fa-chevron-down"></i></div>
+            <div class="mob-menu__sub">
+                <a href="services.html#professionals" onclick="closeMobile()">For Professionals</a>
+                <a href="services.html#individuals" onclick="closeMobile()">For Individuals</a>
+                <a href="services.html" onclick="closeMobile()">All Services</a>
+            </div>
+        </div>
+        <a href="contact.html" onclick="closeMobile()">Contact</a>
+    </div>
+
+    <!-- ═══════════ PAGE HERO ═══════════ -->
+    <div class="page-hero">
+        <div class="page-hero__bg"></div>
+        <div class="page-hero__blob page-hero__blob--1"></div>
+        <div class="page-hero__blob page-hero__blob--2"></div>
+        <div class="container">
+            <span class="page-hero__tag">About Well Arabia</span>
+            <h1 class="page-hero__title">Where Heritage<br>Meets <span class="accent">Wellness</span></h1>
+            <p class="page-hero__desc">A heritage-driven food innovation company bridging Arab dietary wisdom with modern science, AI, and community — for a healthier MENA region and beyond.</p>
+            <div class="page-hero__breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>About</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════ ABOUT SECTION ═══════════ -->
+    <section class="about page-transition">
+        <div class="container">
+            <div class="about__grid">
+                <div class="about__content reveal">
+                    <span class="tag">Who We Are</span>
+                    <h2 class="section-title">Rooted in Tradition,<br>Powered by Science</h2>
+                    <p>Well Arabia is a heritage-driven food innovation company that bridges Arab dietary wisdom with modern science and AI. It introduces a culturally rooted, evidence-based nutrition model designed to support holistic health.</p>
+                    <p>We offer curated, heritage-inspired meal plans, educational resources, and consultancy services for individuals, nutrition professionals, and food establishments — while promoting sustainable food systems and empowering local producers.</p>
+
+                    <div class="about__values">
+                        <div class="about__pill"><i class="fas fa-seedling"></i> Nourishment &amp; Nature</div>
+                        <div class="about__pill"><i class="fas fa-flask"></i> Science &amp; Trust</div>
+                        <div class="about__pill"><i class="fas fa-landmark"></i> Heritage &amp; Warmth</div>
+                        <div class="about__pill"><i class="fas fa-fire"></i> Culinary Roots</div>
+                    </div>
+                </div>
+                <div class="about__visual reveal reveal-d2">
+                    <div class="about__image-stack">
+                        <div class="about__img about__img--1">
+                            <img src="images/page4_img5_1080x720.png" alt="Arab heritage cuisine">
+                        </div>
+                        <div class="about__img about__img--2">
+                            <img src="images/page5_img3_1080x682.png" alt="Traditional food preparation">
+                        </div>
+                        <div class="about__img about__img--3">
+                            <img src="logo.jpeg" alt="Well Arabia">
+                        </div>
+                        <div class="about__color-bar">
+                            <div class="about__color-swatch" style="background: var(--cedar);"></div>
+                            <div class="about__color-swatch" style="background: var(--med-blue);"></div>
+                            <div class="about__color-swatch" style="background: var(--sand);"></div>
+                            <div class="about__color-swatch" style="background: var(--terra);"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ MISSION & VISION ═══════════ -->
+    <div class="mission">
+        <div class="mission__bg-pattern"></div>
+        <div class="container">
+            <div class="mission__grid">
+                <div class="mission__card reveal tilt-card">
+                    <div class="mission__card-tag">Our Mission</div>
+                    <p class="mission__card-text">To connect Arab food traditions with modern health science, promoting wellness, sustainability, and cultural identity.</p>
+                </div>
+                <div class="mission__card reveal reveal-d2 tilt-card">
+                    <div class="mission__card-tag">Our Vision</div>
+                    <p class="mission__card-text">To position Arab food heritage as a globally recognized model for health, sustainability, and well-being.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════ HERITAGE GALLERY ═══════════ -->
+    <div class="heritage-gallery">
+        <div class="container">
+            <div class="heritage-gallery__header reveal">
+                <span class="tag--sand">Visual Identity</span>
+                <h2 class="section-title">Healthy People. Happy Moments.</h2>
+                <p class="section-desc" style="margin:0 auto;">Our brand celebrates wellness, positivity, and healthy living through vibrant visuals rooted in Arab culture and nature.</p>
+            </div>
+        </div>
+        <div class="heritage-gallery__grid reveal">
+            <div class="heritage-gallery__item">
+                <img src="images/page11_img1_906x1200.png" alt="Active lifestyle wellness">
+            </div>
+            <div class="heritage-gallery__item">
+                <img src="images/page12_img1_663x1105.png" alt="Heritage food">
+            </div>
+            <div class="heritage-gallery__item">
+                <img src="images/page5_img3_1080x682.png" alt="Community wellness">
+            </div>
+            <div class="heritage-gallery__item">
+                <img src="images/page7_img4_720x1280.png" alt="Cedar landscapes">
+            </div>
+            <div class="heritage-gallery__item">
+                <img src="images/page8_img3_663x1178.png" alt="Mediterranean lifestyle">
+            </div>
+            <div class="heritage-gallery__item">
+                <img src="images/page9_img3_720x960.png" alt="Stone villages heritage">
+            </div>
+            <div class="heritage-gallery__item">
+                <img src="images/page10_img3_756x921.png" alt="Terracotta traditions">
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════ ECOSYSTEM / ROADMAP ═══════════ -->
+    <section class="ecosystem" id="ecosystem">
+        <div class="container">
+            <div class="ecosystem__header reveal">
+                <span class="tag">The Ecosystem</span>
+                <h2 class="section-title">Our Roadmap</h2>
+                <p class="section-desc" style="margin:0 auto">A phased approach to building a comprehensive heritage wellness platform — from consulting to AI-driven personalization.</p>
+            </div>
+
+            <div class="eco-timeline stagger-children">
+                <div class="eco-card reveal" style="--i:0">
+                    <div class="eco-card__icon"><i class="fas fa-compass"></i></div>
+                    <div class="eco-card__title">Foundation</div>
+                    <div class="eco-card__desc">Brand launch, branding, website, and core content creation</div>
+                    <span class="eco-card__phase">Phase 1</span>
+                </div>
+                <div class="eco-card reveal" style="--i:1">
+                    <div class="eco-card__icon"><i class="fas fa-stethoscope"></i></div>
+                    <div class="eco-card__title">Consultations</div>
+                    <div class="eco-card__desc">Online dietary consultations and professional network launch</div>
+                    <span class="eco-card__phase">Phase 2</span>
+                </div>
+                <div class="eco-card reveal" style="--i:2">
+                    <div class="eco-card__icon"><i class="fas fa-robot"></i></div>
+                    <div class="eco-card__title">AI Integration</div>
+                    <div class="eco-card__desc">AI-powered personalized meal plans and dietary analytics</div>
+                    <span class="eco-card__phase">Phase 3</span>
+                </div>
+                <div class="eco-card reveal" style="--i:3">
+                    <div class="eco-card__icon"><i class="fas fa-store"></i></div>
+                    <div class="eco-card__title">Marketplace</div>
+                    <div class="eco-card__desc">Heritage product marketplace connecting local producers and consumers</div>
+                    <span class="eco-card__phase">Phase 4</span>
+                </div>
+                <div class="eco-card reveal" style="--i:4">
+                    <div class="eco-card__icon"><i class="fas fa-earth-americas"></i></div>
+                    <div class="eco-card__title">Global Scale</div>
+                    <div class="eco-card__desc">International expansion serving Arab diaspora worldwide</div>
+                    <span class="eco-card__phase">Phase 5</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ NEWSLETTER ═══════════ -->
+    <div class="newsletter" id="newsletter">
+        <div class="newsletter__glow"></div>
+        <div class="container">
+            <div class="newsletter__inner">
+                <div class="newsletter__text">Stay connected to <span>heritage wellness</span></div>
+                <div class="newsletter__form">
+                    <input type="email" class="newsletter__input" placeholder="Enter your email">
+                    <button class="newsletter__submit">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div>
+                    <img src="logo.jpeg" alt="Well Arabia" class="footer__logo">
+                    <p class="footer__brand-desc">The first holistic Arab heritage diet platform — bridging ancestral wisdom with modern science for a healthier MENA region and beyond.</p>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Platform</h4>
+                    <ul class="footer__links">
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="services.html#professionals">For Professionals</a></li>
+                        <li><a href="services.html#individuals">For Individuals</a></li>
+                        <li><a href="services.html#consultations">Consultations</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Company</h4>
+                    <ul class="footer__links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about.html#ecosystem">Ecosystem</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#newsletter">Subscribe</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Partners</h4>
+                    <ul class="footer__links">
+                        <li><a href="contact.html">Heritage Restaurants</a></li>
+                        <li><a href="contact.html">Dietitians &amp; Coaches</a></li>
+                        <li><a href="contact.html">Academic Institutions</a></li>
+                        <li><a href="contact.html">Farmers &amp; Producers</a></li>
+                        <li><a href="contact.html">Wellness &amp; Retail Brands</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__copy">&copy; 2026 Well Arabia. All rights reserved.</div>
+                <div class="footer__social">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="to-top" id="toTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
